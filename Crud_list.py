@@ -10,8 +10,9 @@ while True:
             todos.append(todo)
 
         case 'show':
-            for item in todos:
-                print(item.capitalize())
+            for index, item in enumerate(todos):
+                row = f"{index} - {item.capitalize()}"
+                print(row)
 
         case 'update' :
             number = int(input("Number of the todo to edit: "))
