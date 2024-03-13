@@ -4,19 +4,27 @@ for index, item in enumerate(filenames):
     print(row)
 
 
+
 ips = ['100.122.133.105', '100.122.133.111']
 
-user_option = int(input("Enter the index of the Ip you want:") )
 
-match user_option:
-     case 1 :
-         for index, item in enumerate(ips):
-             print("You chose", item)
+user_choice = int(input("Enter the index of the Ip you want:") )
 
-     case 2 :
-         for index, item in enumerate(ips):
-             print("You chose", item)
+messege = f"You chose {ips[user_choice]}"
+print(messege)
 
+#Excercose2
+temperatures = [10.5, 15, "string_as_numbers"]
+print(temperatures)
+#ex5 remove an item from the list seconds
+seconds = [1.23, 1.45, 1.02, 1.11]
+seconds.remove(1.45)
+print(seconds)
 
+#excercise 3 for day 5, finding menu
+menu = ["pasta", "pizza", "salad"]
+
+for i, j in enumerate(menu):
+    print(f"{i}.{j}")
 
 
